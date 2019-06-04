@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  Name:
+  <input 
+    (click)="click($event)"
+    (keyup)="keyUp($event)"
+    (mouseover)="mouseOver($event)"
+    
+    [disabled]="isDisabled"
+    [hidden]="isHidden"
+    
+    [class]="customClass" 
+    
+    [class.uppercase]="isUpperCase"
+    [style.background-color]="isDarkTheme ? 'gray' : 'white'">
+</div>
+
+<app-more-info
+  [name]="name"
+  (changeHobby)="changingHobby($event)"></app-more-info>
+
